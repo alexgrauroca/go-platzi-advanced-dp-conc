@@ -6,7 +6,7 @@ import (
 )
 
 func Run() {
-	fibo := []int{42, 40, 41, 42, 38}
+	fibo := []int{150, 42, 40, 41, 42, 38, 50, 20, 60, 100, 122}
 	startRun := time.Now()
 	cache := NewCache(func(cache *Memory, n int) (interface{}, error) {
 		return Fibonacci(cache, n), nil
