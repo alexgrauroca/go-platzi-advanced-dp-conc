@@ -1,7 +1,7 @@
 package main
 
-import "go-platzi-advanced-dp-conc/src/cache"
+import "go-platzi-advanced-dp-conc/src/observer"
 
 func main() {
-	cache.Run()
+	observer.Run()
 }
