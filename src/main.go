@@ -1,7 +1,7 @@
 package main
 
-import "go-platzi-advanced-dp-conc/src/observer"
+import platzi "go-platzi-advanced-dp-conc/src/strategy"
 
 func main() {
-	observer.Run()
+	platzi.Run()
 }
