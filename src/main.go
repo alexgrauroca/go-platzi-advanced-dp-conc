@@ -1,7 +1,20 @@
 package main
 
-import platzi "go-platzi-advanced-dp-conc/src/chat"
+import (
+	"flag"
+	"go-platzi-advanced-dp-conc/src/chat"
+	"go-platzi-advanced-dp-conc/src/netcat"
+)
+
+var app = flag.String("app", "chat", "Select chat or netcat app to run")
 
 func main() {
-	platzi.Run()
+	flag.Parse()
+
+	switch *app {
+	case "netcat":
+		netcat.Run()
+	default:
+		chat.Run()
+	}
 }
